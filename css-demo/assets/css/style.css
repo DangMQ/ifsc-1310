@@ -15,9 +15,18 @@ html{
 
 
 
+/*------------Utility Classes-----------*/
+
+.container{
+    width:70vw;
+    margin:40px auto;
+    max-width:960px;
+}
+
 body{
     font-family: 'EB Garamond', serif;
     margin:0;
+    line-height:1.5;
 }
 
 header.primary{
@@ -82,4 +91,45 @@ header.primary nav ul li a{
 header.primary nav a:hover,
 header.primary nav a:active{
     background-color:rgba(0,0,0,.8);
+}
+
+#intro{
+    border-bottom:1px dotted #c0c0c0;
+    padding-bottom:1.2rem;
+}
+
+#intro h2{
+    color:#BF8173;
+}
+
+#content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+
+
+
+
+
+
+
+/* Media Query Example */
+@media screen and (max-width:590px){
+    header.primary nav ul{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        margin:0 auto;
+        width:60vw;
+    }
+    
+    header.primary nav a{
+        display:block;
+    }
+    
+    header.primary nav li{
+        margin-bottom:10px;
+    }
 }
